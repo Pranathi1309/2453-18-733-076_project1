@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+  <h3>VENTILATOR DETAILS</h3>
+	<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Sno</th>
+      <th scope="col">hid</th>
+      <th scope="col">vid</th>
+      <th scope="col">status</th>
+      <th scope="col">hname</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%for(var i=0;i<vent.length;i++){%>
+    <tr>
+      <th scope="row"><%=i+1%></th>
+      <td><%=vent[i].hid%></td>
+      <td><%=vent[i].vid%></td>
+      <td><%=vent[i].status%></td>
+       <td><%=vent[i].hname%></td>
+    </tr>
+   <%}%>
+  </tbody>
+</table>
+
+
+
+
+	
+
+
+</body>
+</html>

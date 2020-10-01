@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title></title>
+</head>
+<body>
+	<h3>HOSPITAL DETAILS</h3>
+	<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Sno</th>
+      <th scope="col">hid</th>
+      <th scope="col">name</th>
+      <th scope="col">location</th>
+      <th scope="col">address</th>
+       <th scope="col">phone</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<%for(var i=0;i<me.length;i++){%>
+    <tr>
+      <th scope="row"><%=i+1%></th>
+      <td><%=me[i].hid%></td>
+      <td><%=me[i].name%></td>
+      <td><%=me[i].location%></td>
+       <td><%=me[i].address%></td>
+      <td><%=me[i].phone%></td>
+    </tr>
+   <%}%>
+  </tbody>
+</table>
+
+
+
+	
+
+
+</body>
+</html>
